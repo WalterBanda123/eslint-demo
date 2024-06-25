@@ -27,8 +27,10 @@
     "husky": "^8.0.0"
   },
   "lint-staged": {
-    "src/**/*.{ts}": "prettier --write",
-    "src/**/*.ts": "eslint"
+    "src/**/*.{ts}": [
+      "prettier --write",
+      "eslint"
+    ]
   },
   "dependencies": {
     "express": "^4.19.2"
